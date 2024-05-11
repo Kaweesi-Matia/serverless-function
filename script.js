@@ -1,8 +1,8 @@
 
-const apiKey = "YLKTdi2VPfXtYmRpfApNln5RtTp1ZX1lNNbNzrqU";
+
 
 // Fetch data from NASA APOD API
-fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=5`) // Let's fetch multiple images
+fetch("https://idyllic-dodol-be9a1c.netlify.app/.netlify/functions/apodAPI") // Let's fetch multiple images
   .then(response => response.json())
   .then(data => {
     const apodContainer = document.getElementById("apodContainer");
